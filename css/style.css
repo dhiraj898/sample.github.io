@@ -2,13 +2,13 @@
 /* Colors */
 
 .bg-trans{
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: #f7fff7ff;
+
 }
 
 .bg-trans a{
     background-color: #ffffff00;
-    color: #202020;
+    color: #1a535cff;
     font-size: 18px;
 }
 
@@ -16,7 +16,7 @@ html,body{
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 16px;
+    font-size: 1.2vw;
 }
 
 a {
@@ -33,14 +33,14 @@ a {
 .navbar1{
     width: 100%;
     height: 70px;
-    background: #6b6b6b00;
+    background: #f7fff7ff;
     overflow: hidden;
 }
 
 #logo{
     float: left;
     padding-left: 65px;
-    color: #292929;
+    color: #1a535cff;
     font-size: 25px;
     height: 100%;;
 }
@@ -49,6 +49,7 @@ a {
     text-align: center;
     margin: 15px auto;
     text-decoration: none;
+    color: #1a535cff;
 }
 
 
@@ -59,6 +60,7 @@ a {
     padding-right: 75px;
     margin: 15px auto;
     font-size: 25px;
+    color: #1a535cff;
 }
 
 .hamburger .fa-bars{
@@ -70,24 +72,26 @@ a {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 25px;
+    font-size: 2rem;
+    color: #1a535cff;
   }
 
 .overlay1{
     width: 0;
     height: 100vh;
-    position: none;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     overflow-x: hidden;
-    background-color: #ffffff;
-    transition: ease-in-out 0.5s;
+    background-color: #f7fff7ff;
+    transition: 0.5s;
 }
 
 .overlay-content{
     height: 100%;
     width: 100%;
+    color: #1a535cff;
     padding: 0;
     margin: 0;
 }
@@ -95,7 +99,7 @@ a {
     width: 100%;
 }
 .menu{
-    background-color: #e9b1b1;
+    background-color:  #f7fff7ff;
 }
 
 .menu #logo{
@@ -104,106 +108,97 @@ a {
 
 .menu ul{
     margin: 100px;
-    line-height: 4rem;
-    font-size: 2.5rem;
+    margin-top: 130px;
+    line-height: 5rem;
+    font-size: 4rem;
     list-style: none;
 }
 
 .menu ul a{
-    color: #292929 !important;
+    color: #1a535cff !important;
+    padding: 20px;
 }
 
-.info div{
+.menu ul li:hover a{
+    color: rgb(11, 47, 53);
+}
+
+.info{
+    background-color: #4ecdc4ff;
+}
+
+.address{
     margin: 100px;
+    margin-top: 120px;
 }
 
 .info h2{
     margin-bottom: 30px;
+    font-size: 3rem;
 }
+
+.info p{
+    font-size: 1.2rem;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover{
+    color: rgb(11, 47, 53) !important;
+}
+
+/* Banner Section-1 */
 
 .banner{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 88vh;
     width: 100%;
-    height: 89vh;
-    background-color: #f2f2f2;
-      background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+    background-color: #f7fff7ff;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@keyframes animate-banner{
-    0%{
-        background-position: 0;
-    }
-
-    25%{
-        background-position: 100%;
-    }
-
-    75%{
-        background-position: 0;
-    }
-
-    100%{
-        background-position: 100%;
+@media only screen and (max-width: 600px){
+    .banner{
+        flex-direction: column;
+        text-align: center;
     }
 }
 
-.backdrop{
-    background: radial-gradient(circle, rgba(139,199,242,1) 0%, rgba(200,219,149,1) 15%,rgba(137,201,174,1) 31%, rgba(181,134,130,1) 51%, rgba(125,143,186,1) 67%, rgba(166,79,194,1) 89%, rgba(205,56,86,1) 100%);
-    background-size: 300% 300%;
-    background-position: 100%;
-    animation: animate-banner linear 5s infinite alternate;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+.item h2{
+    font-size: 4em;
+    color: #1a535cff;
+    margin-left: 15%;
+    padding: 30px;
 }
 
-.content{
-    text-align: center;
-    font-size: 2rem;
+.item button{
+    width: 50%;
+    height: 50px;
+    margin-left: 22%;
+    border: none;
+    background-color: #ff6b6bff;
+    border-radius: 50px;
+    color: #f7fff7ff;
+    font-size: 20px;
+    outline: none;
+    transition: 0.2s;
 }
 
-.content h2{
-    padding: 10px;
-    font-size: 4rem;
+.item button:hover{
+    border-radius: 50px;
+    background: #ff6b6b;
+    box-shadow:  3px 3px 10px #e35f5f, 
+                 -3px -3px 10px #ff7777;
 }
 
-.content p{
-    font-size: 3rem;
-    padding: 10px;
+.responsive1{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
 }
-
-.fa-arrow-down{
-    margin-top: 120px;
-    /* animation: shake 0.5s infinite alternate; */
-    
-}
-
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-  .section-2{
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background-color: #e9b1b1;
-  }
-
