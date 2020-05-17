@@ -16,7 +16,7 @@ html,body{
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 1.2vw;
+    font-size: 16px;
 }
 
 a {
@@ -27,6 +27,9 @@ a {
     padding: 0;
 }
 
+.row{
+    margin: 0;
+}
 /* Home */
 /* Navbar */
 
@@ -55,10 +58,10 @@ a {
 
 
 .hamburger{
-    vertical-align: auto;
     float: right;
     padding-right: 75px;
-    margin: 15px auto;
+    margin-top: 15px;
+    margin-right: 0;
     font-size: 25px;
     color: #1a535cff;
 }
@@ -153,23 +156,14 @@ a {
 /* Banner Section-1 */
 
 .banner{
-    height: 88vh;
+    height: auto;
     width: 100%;
+    padding: 40px;
     background-color: #f7fff7ff;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 }
-
-@media only screen and (max-width: 600px){
-    .banner{
-        flex-direction: column;
-        text-align: center;
-    }
+.item{
+    margin-top: 30px;
 }
-
 .item h2{
     font-size: 4em;
     color: #1a535cff;
@@ -201,4 +195,72 @@ a {
     width: 100%;
     max-width: 700px;
     height: auto;
+    overflow: hidden;
+    
+}
+
+
+
+/* Section-2 About */
+
+.section_2{
+    width: 100%;
+    background-color: #f7fff7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1rem;
+}
+
+.about{
+    height: 65%;
+    width: 70%;
+}
+
+.first, .second{
+    height: 100%;
+    box-shadow:
+    0 16.7px 74.4px -33px rgba(0, 0, 0, 0.048),
+    0 20.5px 113.4px -33px rgba(0, 0, 0, 0.075),
+    0 35.2px 140.2px -33px rgba(0, 0, 0, 0.095),
+    0 84.1px 170.6px -33px rgba(0, 0, 0, 0.12),
+    0 227px 249px -33px rgba(0, 0, 0, 0.17)
+  ;
+  
+  
+}
+
+.first{
+    background: url(/media/brooke-cagle-LCcFI_26diA-unsplash.jpg) ;
+    background-size: cover;
+}
+
+.second{
+    background-color:  #ff6b6b ;
+    margin-left: -30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.second p:nth-child(1){
+    color: #1a535cff;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    font-size: 1em;
+}
+
+.second h3{
+    color: #f7fff7ff;
+    padding-left: 10px;
+    font-size: 3em;
+}
+
+#aboutcontent{
+    color: #f7fff7ff;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
 }
