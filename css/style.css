@@ -17,6 +17,7 @@ html,body{
     padding: 0;
     border: 0;
     font-size: 16px;
+    /* box-sizing: content-box; */
 }
 
 a {
@@ -263,4 +264,44 @@ a {
     padding-left: 10px;
     margin-top: 20px;
     font-size: 1.2em;
+}
+
+.section_3{
+    width: 100%;
+    background-color: #f7fff7ff;
+    height: 100%;
+    font-size: 1rem; 
+}
+
+.card-main{
+    padding: 100px;
+}
+
+.card{
+    background-color: #4ecdc4ff;
+    margin: 20px;
+    height: 370px;
+    padding: 15px;
+    color: #f7fff7ff;
+    border-radius: 15px;
+}
+
+.card img{
+    margin-top: 10px;
+    width: 80px;
+    fill: #f7fff7ff;
+} 
+
+.card-outer:nth-child(3) img{
+    width: 65px;
+}
+
+.card h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: #1a535cff;
+    font-weight: 500;
 }
