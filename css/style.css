@@ -137,7 +137,7 @@ a {
 }
 
 .info h2{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 3rem;
 }
 
@@ -206,34 +206,26 @@ a {
 
 .section_2{
     width: 100%;
+    height: 100vh;
     background-color: #f7fff7ff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-size: 1rem;
 }
 
 .about{
-    height: 65%;
+    height: 60%;
     width: 70%;
 }
 
 .first, .second{
     height: 100%;
-    box-shadow:
-    0 16.7px 74.4px -33px rgba(0, 0, 0, 0.048),
-    0 20.5px 113.4px -33px rgba(0, 0, 0, 0.075),
-    0 35.2px 140.2px -33px rgba(0, 0, 0, 0.095),
-    0 84.1px 170.6px -33px rgba(0, 0, 0, 0.12),
-    0 227px 249px -33px rgba(0, 0, 0, 0.17)
-  ;
-  
-  
+    box-shadow: 0 41px 53px rgba(0, 0, 0, 0.29);
 }
 
 .first{
-    background: url(/media/brooke-cagle-LCcFI_26diA-unsplash.jpg) ;
+    background: url(media/brooke-cagle-LCcFI_26diA-unsplash.jpg) ;
     background-size: cover;
 }
 
@@ -266,11 +258,15 @@ a {
     font-size: 1.2em;
 }
 
+/* Section_3 Our services */
+
 .section_3{
+    position: relative;
     width: 100%;
     background-color: #f7fff7ff;
-    height: 100%;
-    font-size: 1rem; 
+    height: 100vh;
+    font-size: 1rem;
+    display: block; 
 }
 
 .card-main{
@@ -284,6 +280,8 @@ a {
     padding: 15px;
     color: #f7fff7ff;
     border-radius: 15px;
+    border: none;
+    transition: all 0.8s;
 }
 
 .card img{
@@ -304,4 +302,8 @@ a {
 .card p{
     color: #1a535cff;
     font-weight: 500;
+}
+
+.card:hover{
+    box-shadow: 0 41px 53px rgba(0, 0, 0, 0.29);
 }
