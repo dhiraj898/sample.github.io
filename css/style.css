@@ -225,7 +225,7 @@ a {
 }
 
 .first{
-    background: url(media/brooke-cagle-LCcFI_26diA-unsplash.jpg) ;
+    background: url("media/brooke-cagle-LCcFI_26diA-unsplash.jpg") ;
     background-size: cover;
 }
 
